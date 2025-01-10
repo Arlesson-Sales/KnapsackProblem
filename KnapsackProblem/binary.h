@@ -14,3 +14,9 @@ unsigned short binaryAND(unsigned short, unsigned short);
 
 //Faz uma operação OR binaria.
 unsigned short binaryOR(unsigned short, unsigned short);
+
+//Retorna os 8 bits mais baixos de um valor de 16 bits.
+unsigned short lowerBits(unsigned short);
+
+//Retorna os 8 bit mais altos de um valor de 16 bits.
+unsigned short upBits(unsigned short);
