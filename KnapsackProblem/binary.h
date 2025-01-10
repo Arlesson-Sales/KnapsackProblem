@@ -8,3 +8,9 @@ unsigned short bitOff(unsigned short, int);
 
 //Faz a verificação se o bit no índice passado está ligado ou não.
 bool verifyBit(unsigned short, int);
+
+//Faz uma opração AND binaria.
+unsigned short binaryAND(unsigned short, unsigned short);
+
+//Faz uma operação OR binaria.
+unsigned short binaryOR(unsigned short, unsigned short);
