@@ -15,3 +15,17 @@ unsigned short arithmeticCrossing(unsigned short solution_a, unsigned short solu
 {
 	return binaryAND(solution_a, solution_b);
 }
+
+unsigned short simpleMutation(unsigned short solution, int bit_index)
+{
+	if (verifyBit(solution, bit_index))
+		return bitOff(solution, bit_index);
+	else
+		return bitOn(solution, bit_index);
+}
+
+unsigned short doubleMutation(unsigned short solution, int bit_index_a, int bit_index_b)
+{
+	unsigned short mutated_solution = simpleMutation(solution, bit_index_a);
+	return simpleMutation(mutated_solution, bit_index_b);
+}
