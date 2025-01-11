@@ -28,14 +28,14 @@ unsigned short binaryOR(unsigned short value_a, unsigned short value_b)
 	return value_a | value_b;
 }
 
-unsigned short lowerBits(unsigned short bit_string)
+unsigned short getLowerBits(unsigned short bit_string)
 {
 	for (int index = 0; index <= 7; index++)
 		bit_string = bitOff(bit_string, index);
 	return bit_string;
 }
 
-unsigned short upBits(unsigned short bit_string)
+unsigned short getUpperBits(unsigned short bit_string)
 {
 	for (int index = 8; index <= 15; index++)
 		bit_string = bitOff(bit_string, index);
