@@ -11,3 +11,6 @@ unsigned short simpleMutation(unsigned short, int);
 
 //Faz uma mutação dupla em um valor de 16 bits.
 unsigned short doubleMutation(unsigned short, int, int);
+
+//Faz a verificação de uma determinada solução e exibe o valor e o peso total daquela solução.
+bool verifySolution(unsigned short);
