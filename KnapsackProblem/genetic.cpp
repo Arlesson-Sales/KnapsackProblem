@@ -48,6 +48,6 @@ bool verifySolution(unsigned short solution)
 		}
 	}
 
-	std::cout << "$" << total_value << " - " << total_weight << "Kg ";
+	std::cout << solution << " - $" << total_value << " - " << total_weight << "Kg ";
 	return total_weight <= BAG_WEIGHT_LIMIT;
 }
